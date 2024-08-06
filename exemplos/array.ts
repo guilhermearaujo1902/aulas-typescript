@@ -35,3 +35,12 @@ nomes = ['Harry','Hermione', 'Rony', 'Draco', 'Luna', 'Hermione']
 
 // EXIBIR NO CONSOLE A QUANTIDADE DE VEZES QUE APARECE O NOME
 // 'HERMIONE'
+
+let quant: number = 0;
+nomes.forEach(nome => {
+    if (nome === 'Hermione') {
+        quant++;
+    }
+});
+
+console.log(`"Hermione" aparece ${quant} vezes na lista.`);
