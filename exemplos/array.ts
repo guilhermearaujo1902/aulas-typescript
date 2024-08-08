@@ -36,11 +36,17 @@ nomes = ['Harry','Hermione', 'Rony', 'Draco', 'Luna', 'Hermione']
 // EXIBIR NO CONSOLE A QUANTIDADE DE VEZES QUE APARECE O NOME
 // 'HERMIONE'
 
+let primeiroNome: number = nomes.indexOf('Hermione');
+let ultimoNome: number = nomes.lastIndexOf('Hermione');
+
 let quant: number = 0;
-nomes.forEach(nome => {
+let listaIndex: number[] = [];
+nomes.forEach((nome, index) => {
     if (nome === 'Hermione') {
         quant++;
+        listaIndex.push(index);
     }
 });
 
 console.log(`"Hermione" aparece ${quant} vezes na lista.`);
+console.log(`As posições são: ${listaIndex.toString()}`);
