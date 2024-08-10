@@ -3,6 +3,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+
+        #divPar{
+            border: solid 3px tomato;
+            color: tomato;
+        }
+
+        #divImpar{
+            border: solid 3px darkorange;
+            color: darkorange;
+        }
+
+        .flex{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .flex div{
+            padding: 20px;
+            margin-top: 20px;
+            min-width: 200px;
+            font-size: 20px;
+            border-radius: 8px;
+        }
+
+    </style>
 </head>
 <body>
 
@@ -15,6 +41,17 @@
 
     <br>
     <div id="resultado"></div>
+
+    <br><br>
+    <label for="numero">Digite um número</label>
+    <input type="text" name="numero" id="numero">
+
+    <button onclick="capturarNumero()">Verificar Par/Ímpar</button>
+
+    <div class="flex">
+        <div id="divPar"></div>
+        <div id="divImpar"></div>
+    </div>
 
     <script src="script.js"></script>
 </body>
