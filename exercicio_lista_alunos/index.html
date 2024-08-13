@@ -1,0 +1,61 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        table, tr, td, th{
+            border: solid 1px black;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>Controle de alunos</h2>
+
+    <h4>Cadastro</h4>
+
+    <label for="id">ID</label><br>
+    <input type="number" id="id"><br><br>
+
+    <label for="nome">Nome</label><br>
+    <input type="text" id="nome"><br><br>
+
+    <label for="matricula">Matrícula</label>
+    <input type="checkbox" id="matricula"><br><br>
+
+    <label for="periodo">Período</label><br>
+    <input type="text" id="periodo"><br><br>
+
+    <label for="n1">Nota 1</label><br>
+    <input type="number" id="n1"><br><br>
+
+    <label for="n2">Nota 2</label><br>
+    <input type="number" id="n2"><br><br>
+
+    <label for="n3">Nota 3</label><br>
+    <input type="number" id="n3"><br><br>
+
+    <button onclick="addAluno()">Adicionar aluno</button>
+    <br><br>
+
+    <h4>Lista de alunos</h4>
+    <table id="tabelaAlunos">
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Matrícula</th>
+            <th>Período</th>
+            <th>Média</th>
+        </tr>
+    </table>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
